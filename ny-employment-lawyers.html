@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en" class="text-center">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Joseph & Norinsberg | NY Employment Lawyers</title>
+    <meta name="description" content="NY Employment Lawyers">
+    <meta name="theme-color" content="#0d296b">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://employeejustice.com/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Joseph & Norinsberg | NY Employment Lawyers">
+    <meta property="og:description" content="NY Employment Lawyers">
+    <meta property="og:image" content="project-media/100/JN1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" as="image" href="project-media/100/JN1.webp">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+    /* Ensure visually-hidden works even if Bootstrap CSS fails to load */
+    .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    :root {
+        --brand:#0d296b;
+        --brand-600:#0b235b;
+        --ink:#0f172a;
+        --surface:#f7f9fc;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+        margin-top: 0;
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background-color: #0e0e0e;
+        color: var(--ink);
+    }
+
+    .hero-title, h1, h2, h3 {
+        font-family: "Playfair Display", serif;
+        letter-spacing: .2px;
+    }
+    .hero-title { font-size: clamp(2.6rem, 6vw, 4rem); }
+    h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); }
+
+    a.inline-link { text-decoration: underline; text-underline-offset: 3px; }
+
+    #mainHeader {
+        position: fixed; top: 0; right: 0; left: 0; z-index: 2000;
+        background: rgba(13,41,107,0);
+        transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, border-color .3s ease;
+        border-bottom: 1px solid transparent;
+    }
+    #mainHeader.scrolled {
+        background: rgba(13,41,107,.65);
+        box-shadow: 0 6px 18px rgba(0,0,0,.25);
+        backdrop-filter: saturate(140%) blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+
+    .hero-section { padding-top: 100px; position: relative; color: #fff; overflow: hidden; min-height: 400px; }
+    .hero-section::before {
+        content:""; position:absolute; inset:0;
+        background: radial-gradient(1200px 600px at 60% 20%, rgba(255,255,255,.07), transparent 60%),
+                   linear-gradient(to bottom, rgba(0,0,0,.32), rgba(0,0,0,.52));
+        pointer-events:none;
+    }
+    .hero-title { font-weight: 700; margin-bottom: .5rem; text-shadow: 0 2px 18px rgba(0,0,0,.28); }
+
+    .accent { position: relative; display: inline-block; padding-bottom: .25rem; }
+    .accent::after {
+        content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -12px;
+        width: 72px; height: 2px; border-radius: 999px;
+        background: linear-gradient(90deg, rgba(255,255,255,.0) 0%, #ffffff 50%, rgba(255,255,255,.0) 100%);
+        opacity: .95;
+    }
+    .accent-dark::after {
+        background: linear-gradient(90deg, rgba(13,41,107,0) 0%, var(--brand) 50%, rgba(13,41,107,0) 100%);
+    }
+
+    .section-wrap { padding: 2rem; position:relative; }
+    .section-inner { max-width: 70ch; margin: 0 auto; text-align: left; }
+    .prose p {
+        font-size: 1.05rem; line-height: 1.9; letter-spacing: .01em; margin-bottom: 1.15rem;
+        color: #0f0f10; text-align: justify;
+    }
+    .section-wrap:not(:first-child)::before {
+        content:""; position:absolute; top:-1.5rem; left:0; right:0; height:1px;
+        background: linear-gradient(90deg, transparent, rgba(13,41,107,.12), transparent);
+    }
+
+    .figure { border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 22px rgba(0,0,0,.15); }
+    .figure img { display: block; width: 100%; height: auto; transition: transform .28s ease; }
+    .figure:hover img { transform: scale(1.015); }
+
+    .btn-ghost {
+        display: inline-flex; align-items: center; gap: .6rem;
+        padding: .68rem 1.15rem; border: 1px solid rgba(255,255,255,.85); color: #fff;
+        background: rgba(255,255,255,.085); border-radius: 999px;
+        backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 10px 28px rgba(0,0,0,.25); text-decoration: none; font-weight: 600; letter-spacing: .02em;
+        transition: transform .15s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.15); border-color: #ffffff; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(0,0,0,.32); }
+    .btn-ghost i { transition: transform .18s ease; }
+    .btn-ghost:hover i { transform: translateX(4px); }
+    .btn-ghost:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
+    .btn-ghost:active { transform: translateY(0); }
+
+    #mainHeader a { color:#fff; text-decoration:none; }
+
+    .header-icon {
+        display:inline-flex; align-items:center; justify-content:center;
+        width:40px; height:40px; border-radius:999px; margin-left:.5rem;
+        color:#fff; text-decoration:none; outline-offset:2px;
+    }
+    .header-icon i { font-size:1.5rem; line-height:1; }
+    .header-icon:focus-visible { outline:2px solid #fff; }
+    @media (hover:hover){ .header-icon:hover{ background: rgba(255,255,255,.12); } }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .footer-link { text-decoration: none; }
+    .footer-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    footer { position: relative; background: #0c0c0c; }
+    footer::before {
+        content:""; position:absolute; top:0; left:0; right:0; height:2px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent); opacity:.6;
+    }
+
+    a:focus-visible, button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+    #services { scroll-margin-top: 110px; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal, .figure img, .btn-ghost, .accent::after { transition: none; animation: none; }
+        html { scroll-behavior: auto; }
+    }
+
+    #backToTop { position: fixed; right: 16px; bottom: 16px; z-index: 1040; display: none; }
+    </style>
+</head>
+<body class="bg-dark text-dark">
+
+    <header id="mainHeader" class="text-white py-3 d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-start mb-0">
+                <a href="#" class="text-white text-decoration-none" aria-label="NY Employment Lawyers home">NY Employment Lawyers</a>
+            </h1>
+            <div><a href="web.facebook.com/nycjusticeattorneys" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a><a href="instagram.com/nycjusticeattorneys" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a><a href="linkedin.com/company/joseph-&-norinsberg" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a></div>
+        </div>
+    </header>
+
+    <section class="hero-section"
+             style="background-image: url('project-media/100/JN1.webp'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+      <div class="container hero-content"
+           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white;">
+        <div class="d-flex flex-column align-items-center text-center">
+          <h2 class="hero-title accent mb-3">Joseph & Norinsberg</h2>
+          <a href="#services" class="btn-ghost" role="button" aria-label="Read more about services">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main style="background-color: #ffffff;">
+        <div class="container py-5" style="margin-top:0;">
+            <div id="services" class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Employment Law Consultation For Workers</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>When a workplace problem affects pay, treatment, scheduling, leave, or job security, informed legal guidance can clarify the issues and practical choices. A consultation with <a href="https://lawfirm.sos-de-muc-1.exo.io/jn1/ny-employment-lawyers.html" class="inline-link">NY Employment Lawyers</a> may help a worker organize relevant facts, identify documents that support the account, and assess whether an internal request, negotiated resolution, or formal claim is appropriate. Advice from NY Employment Lawyers can also highlight limitation periods and other procedural requirements that may affect available remedies.</p>
+                            <p>Preparation can make an initial meeting more productive. A worker may gather an offer letter, relevant policies, pay records, messages, performance materials, and a dated account of significant events while preserving original files and surrounding context. NY Employment Lawyers can help separate verified facts from assumptions, while NY Employment Lawyers may explain possible next steps, such as requesting a correction, pursuing a settlement, or presenting the matter to an appropriate forum.</p>
+                            <p>The best course depends on the evidence, the employer's response, the worker's goals, and the relief available under applicable law. Professional advice can help someone weigh privacy, cost, timing, and the practical effects of remaining in or leaving the role without creating unrealistic expectations about the outcome. Before taking an irreversible step, a worker may benefit from a focused review with NY Employment Lawyers that turns a difficult workplace situation into a clear, documented plan.</p>
+                            <figure class="figure mt-4">
+                                <img src="project-media/101/JN2.webp" loading="lazy" decoding="async" alt="NY Employment Lawyers image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color: var(--brand);">
+                            <span class="accent accent-dark">Constructive Discharge Legal Theories</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Employment claims based on a departure often turn on the circumstances leading up to the final day, not merely on the formal reason recorded by the organization. Courts may consider the seriousness, duration, and effect of workplace conduct, the authority of the people involved, and whether management knew or should have known about the problem. NY Employment Lawyers can assess how these details fit within the applicable standards, including whether the record shows a deliberate effort to make the position untenable. Ordinary conflict, criticism, or disappointment with a management decision will not automatically satisfy that standard. NY Employment Lawyers may also examine whether the same conduct affected other workers or followed an earlier complaint.</p>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-6">
+                                    <p>Several legal bases may overlap, but each has distinct elements. Unequal treatment, retaliation for protected activity, interference with contractual rights, and violations of public policy require different proof, so an employer's stated explanation cannot be examined in isolation. NY Employment Lawyers may compare the treatment of similarly situated workers, the sequence of management decisions, and the response to objections. NY Employment Lawyers can also evaluate whether the conduct is attributable to a supervisor, whether senior personnel knew about it, and whether the available facts show a causal link rather than mere dissatisfaction. These distinctions can affect both liability and the remedies that remain available.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ratio ratio-16x9 mx-auto" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);">
+                                        <iframe src="https://www.youtube.com/embed/pWe5Tz-K_3o" loading="lazy" title="NY Employment Lawyers video" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Remedies may include lost wages, benefits, emotional-distress damages, reinstatement, attorney fees, or other relief, depending on the legal basis and the forum. Procedural rules can impose short deadlines, require an administrative filing, or limit the claims that may be brought together. A careful review should address the departure date, relevant agreements, and the relief sought before a position is finalized. NY Employment Lawyers can provide a measured assessment of whether the available evidence and governing rules support moving forward.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Employment Advice For Career Decisions</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Choosing whether to accept a new role deserves more than a comparison of salary figures. Review the written offer, reporting structure, bonus conditions, benefits, remote-work expectations, and any language governing inventions or outside activities. A conversation with NY Employment Lawyers can clarify which terms are negotiable, while NY Employment Lawyers may help identify provisions that deserve careful attention before a signature is given.</p>
+                            <p>An internal move can also raise questions about role scope, evaluation standards, confidentiality, and the effect of a revised agreement on existing responsibilities. Before accepting a promotion or transferring to another team, compare the new document with prior policies and save copies of communications that explain the change. NY Employment Lawyers can offer a neutral review of the language, and NY Employment Lawyers may help frame practical questions for a manager or human resources representative without escalating the discussion unnecessarily.</p>
+                            <p>Good planning also includes considering timing, professional goals, and the consequences of declining an offer or leaving a position for another opportunity. Keep a private record of signed documents, relevant policies, and key dates, and seek advice before making commitments that could limit future options. NY Employment Lawyers can help turn a broad concern into a focused review, allowing the individual to move forward with a clearer understanding of the available paths.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 reveal">
+                  <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                  <span class="accent accent-dark">
+                  <i class="bi bi-geo-alt" style="margin-right:.5rem;"></i>Joseph & Norinsberg</span>
+                  </h2>
+
+                    <div class="mb-4 ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2186263083845!2d-74.01568202348219!3d40.71320343754114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1bdac572a5%3A0x2f6aefcf1a652bb1!2s1%20World%20Trade%20Center%2085th%20Fl%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sin!4v1791369086691!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <p class="fw-bold" style="color: #000000;">Joseph & Norinsberg</p>
+                    <p style="color: #000000;">1 World Trade Center, 85th Floor, New York, NY 10007</p>
+                    <p style="color: #000000;">8667658734</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white bg-dark mt-5">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Joseph & Norinsberg</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="NY-Employment-Lawyers.html" rel="noopener">Company Website</a></li>    <li><a class="link-light footer-link" href="https://employeejustice.com/" rel="noopener">https://employeejustice.com/</a></li>    <li><a class="link-light footer-link" href="" rel="noopener"></a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm"></h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="" rel="noopener">Useful Links</a></li>    <li><a class="link-light footer-link" href="https://employeejustice.com/" rel="noopener"></a></li>    <li><a class="link-light footer-link" href="https://maps.app.goo.gl/66dqGE1rDJvfKTXf8" rel="noopener"></a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Follow us on Social Media</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="web.facebook.com/nycjusticeattorneys" rel="noopener">Facebook</a></li>    <li><a class="link-light footer-link" href="instagram.com/nycjusticeattorneys" rel="noopener">Instagram</a></li>    <li><a class="link-light footer-link" href="linkedin.com/company/joseph-&-norinsberg" rel="noopener">Linkedin</a></li>  </ul></div>
+            </div>
+            <div class="mt-4">
+                
+<section class="safe-news-wall" aria-label="New York, United States">
+  <style>
+    .safe-news-wall { background:#f4f4f6; color:#333; padding:18px 12px 24px; border-radius:2px; }
+    .safe-news-wall h2 { margin:0 0 16px; color:#111; text-align:center; font-family:Arial, sans-serif; font-size:28px; line-height:1.2; font-weight:400; }
+    .safe-news-grid { column-count:4; column-gap:14px; }
+    .safe-news-card { display:inline-block; width:100%; break-inside:avoid; margin:0 0 14px; padding:18px; background:#fff; border:1px solid #ddd; border-radius:4px; color:#333; text-align:left; text-decoration:none; box-sizing:border-box; }
+    .safe-news-card:hover { color:#333; text-decoration:none; box-shadow:0 4px 16px rgba(66,66,66,.16); }
+    .safe-news-card h3 { margin:0 0 14px; color:#333; font-family:Arial, sans-serif; font-size:24px; line-height:1.25; font-weight:700; letter-spacing:0; }
+    .safe-news-card img { display:block; width:100%; height:auto; margin:0 0 14px; object-fit:cover; }
+    .safe-news-card p { margin:0 0 16px; color:#444; font-family:Arial, sans-serif; font-size:18px; line-height:1.55; }
+    .safe-news-meta { color:#8396a8; font-family:Arial, sans-serif; font-size:15px; line-height:1.4; }
+    @media (max-width: 1100px) { .safe-news-grid { column-count:3; } }
+    @media (max-width: 800px) { .safe-news-grid { column-count:2; } }
+    @media (max-width: 560px) { .safe-news-grid { column-count:1; } .safe-news-wall h2 { font-size:24px; } .safe-news-card h3 { font-size:21px; } }
+  </style>
+  <h2>New York, United States</h2>
+  <div class="safe-news-grid">
+    <a class="safe-news-card" href="https://www.nytimes.com/2026/10/16/learning/word-of-the-day-pittance.html" target="_blank" rel="noopener noreferrer"><h3>Word of the Day: pittance</h3><img src="https://static01.nyt.com/images/2026/09/23/learning/WOTD-pittance/WOTD-pittance-videoSixteenByNine3000.png" alt="" loading="lazy" referrerpolicy="no-referrer"><p>This word has appeared in 46 articles on NYTimes.com in the past year. Can you use it in a sentence?</p><div class="safe-news-meta">nytimes.com - 3h</div></a><a class="safe-news-card" href="https://www.firstpost.com/world/united-states/nyc-mayor-mamdani-hails-federal-court-for-dismissing-trump-govts-lawsuit-against-sanctuary-laws-14053315.html" target="_blank" rel="noopener noreferrer"><h3>NYC Mayor Mamdani hails federal court for dismissing Trump govt&#x27;s lawsuit against sanctuary laws</h3><img src="https://images.firstpost.com/uploads/2026/09/blobhttpsweb.whatsapp.comb4bdd32e-b2c6-44aa-998b-ebdae9810f7e-2026-09-22T060528.516-2026-09-0129be9913d95394999ee70e90168115.jpg?im=FitAndFill,width=1200,height=675" alt="" loading="lazy" referrerpolicy="no-referrer"><p>New York City Mayor Zohran Mamdani lauded the decision of the federal court after it dismissed the Trump administration&#x27;s lawsuit seeking to strike down the city&#x27;s sanctuary laws.</p><div class="safe-news-meta">firstpost.com - 5h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/16/business/warsh-fed-imf-bangkok.html" target="_blank" rel="noopener noreferrer"><h3>Warsh Vows Price Stability as A.I. Delivers ‘Shock’ to Economy</h3><img src="https://static01.nyt.com/images/2026/10/16/multimedia/16biz-warsh-vbgk/16biz-warsh-vbgk-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The Federal Reserve chairman said technological change was complicating the outlook for central banks as policymakers grapple with persistent inflation risks.</p><div class="safe-news-meta">nytimes.com - 7h</div></a><a class="safe-news-card" href="https://www.linkedin.com/posts/the-manila-times_new-york-united-states-victor-wembanyama-activity-7516720761248649217-1nM_" target="_blank" rel="noopener noreferrer"><h3>NEW YORK, United States — Victor Wembanyama and the San Antonio Spurs were predicted to win the 2027 title with the French superstar taking Most Valuable Player honors in an NBA team general managers…</h3><img src="https://media.licdn.com/dms/image/v2/D5622AQEcTDVNvR88Eg/feedshare-image-high-res/B56aFDBszEHEAU-/0/1792125881823?e=2147483647&amp;v=beta&amp;t=FXeRNkNKaneJEsrwVq7o2GJqKiEAsAB38cdZWNqAd2Y" alt="" loading="lazy" referrerpolicy="no-referrer"><p>NEW YORK, United States — Victor Wembanyama and the San Antonio Spurs were predicted to win the 2027 title with the French superstar taking Most Valuable Player honors in an NBA team general managers survey released on Thursday. Read more: https://tmt.news/2447207</p><div class="safe-news-meta">linkedin.com - 7h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/16/learning/on-this-day-oct-16-china-atomic-bomb.html" target="_blank" rel="noopener noreferrer"><h3>On This Day, Oct. 16: In 1964, China detonated its first atomic bomb.</h3><img src="https://static01.nyt.com/images/2026/10/01/learning/OTD10-10/OTD10-10-videoSixteenByNineJumbo1600.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>In 1964, China detonated its first atomic bomb.</p><div class="safe-news-meta">nytimes.com - 8h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/ocasio-cortez-el-sayed-michigan-vance-trump-senate.html" target="_blank" rel="noopener noreferrer"><h3>In Michigan Senate Race, Ocasio-Cortez Joins El-Sayed on Trail in Trump Country</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15pol-michigan-senate-aoc-wczb/15pol-michigan-senate-aoc-wczb-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Representative Alexandria Ocasio-Cortez campaigned with Dr. Abdul El-Sayed in a swath of Michigan including areas won by President Trump, making a progressive pitch in a key Senate race.</p><div class="safe-news-meta">nytimes.com - 10h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/school-shootings-usa-oregon-silver-rail.html" target="_blank" rel="noopener noreferrer"><h3>School Shooting in Oregon Adds Silver Rail Elementary to Grim List</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15bend-shooting-school-shootings-lmbf/15bend-shooting-school-shootings-lmbf-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A long string of school shootings have stricken the nation over the last three decades.</p><div class="safe-news-meta">nytimes.com - 11h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/zampolli-trump-ally-state-department.html" target="_blank" rel="noopener noreferrer"><h3>Trump Ally, Paolo Zampolli, Leaves State Department</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/dc-zampolli-pjkc/dc-zampolli-pjkc-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Paolo Zampolli, a close friend and ally of President Trump’s, gained attention when his ex-wife was detained by ICE after his request.</p><div class="safe-news-meta">nytimes.com - 11h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/nyregion/nyc-sanctuary-law-ice-judge-ruling.html" target="_blank" rel="noopener noreferrer"><h3>Judge Dismisses Trump Lawsuit That Sought to Block N.Y.C. Sanctuary Laws</h3><img src="https://static01.nyt.com/images/2025/11/20/multimedia/15met-sanctuary-nyc/20DC-IMMIG-FINES-bzth-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The ruling was the latest defeat for the administration as it continues a mass deportation campaign.</p><div class="safe-news-meta">nytimes.com - 11h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/alina-habba-mildon-richard-grenell-trump.html" target="_blank" rel="noopener noreferrer"><h3>A Bitter White House Feud, Even by Trump-Era Standards: Alina Mildon and Richard Grenell</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15dc-habba-kc-wkcl/15dc-habba-kc-wkcl-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Two Trump allies — Alina Habba Mildon and Richard Grenell — are locked in a raging dispute that has its roots in the battle for a share of the spoils in Venezuela.</p><div class="safe-news-meta">nytimes.com - 12h</div></a><a class="safe-news-card" href="https://sg.news.yahoo.com/york-city-pension-fund-asks-001051533.html" target="_blank" rel="noopener noreferrer"><h3>New York City pension fund asks Anthropic to delay IPO</h3><img src="https://s.yimg.com/lo/mysterio/api/7315629a80e5e708becd8da84d4dc928871f01273e451869147362db7eb74983/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com.sg%2F3892e5a57e697507f61a39365f803dfc.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The supervisor of New York City’s pension funds, one of the largest in the United States, asked Anthropic to postpone its stock market debut until risks posed by its artificial intelligence technology...</p><div class="safe-news-meta">sg.news.yahoo.com - 12h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/trump-russia-ukraine.html" target="_blank" rel="noopener noreferrer"><h3>Trump’s Deal With Russia Inflames Ukraine War He Vowed to End</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15dc-trump-ukraine-pmfg/15dc-trump-ukraine-pmfg-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The Ukrainian president’s defiant decision to continue attacking Russian refineries underscores President Trump’s inability to end a war he had promised to resolve.</p><div class="safe-news-meta">nytimes.com - 13h</div></a><a class="safe-news-card" href="https://www.jpost.com/international/article-911888" target="_blank" rel="noopener noreferrer"><h3>Rubio spoke with Lebanon&#x27;s Aoun about confiscation of explosives from Hezbollah, US official says</h3><img src="https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/739749" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Rubio urged Aoun to hold accountable those who ordered, financed, and directed the shipment of of hundreds of kilograms of explosives from Hezbollah.</p><div class="safe-news-meta">jpost.com - 13h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/ukraine-us-aid-trump.html" target="_blank" rel="noopener noreferrer"><h3>How U.S. Support to Ukraine Has Evolved Under Trump</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15dc-ukraine-support-cvfl/15dc-ukraine-support-cvfl-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>President Trump’s latest push to end the war in Ukraine has raised questions about the future of U.S. support.</p><div class="safe-news-meta">nytimes.com - 14h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/business/media/netflix-bela-bajaria-peter-rice.html" target="_blank" rel="noopener noreferrer"><h3>Netflix Shakes Up Top Ranks, Replacing Its Chief Content Officer</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/NETFLIX-Bela-Bajaria-qpfh/NETFLIX-Bela-Bajaria-qpfh-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Peter Rice, a former executive at Disney and Fox, will take over from Bela Bajaria.</p><div class="safe-news-meta">nytimes.com - 14h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/world/americas/venezuela-machado-trump-oil-deal.html" target="_blank" rel="noopener noreferrer"><h3>Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15int-venezuela-machado01-photo-klht/15int-venezuela-machado01-photo-klht-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>As ties with the Trump administration fray, María Corina Machado said her return to Venezuela would come “sooner than you would expect.”</p><div class="safe-news-meta">nytimes.com - 14h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/hindu-temple-chicago-arrest.html" target="_blank" rel="noopener noreferrer"><h3>Teen Arrested Over Plan to Attack Hindu Temple, Officials Say</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15nat-attack-averted-wkqc/15nat-attack-averted-wkqc-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The suspect in suburban Chicago was in the parking lot of the temple on Sunday and told a co-worker that his gun had jammed, the authorities said.</p><div class="safe-news-meta">nytimes.com - 14h</div></a><a class="safe-news-card" href="https://www.dazn.com/en-US/news/basketball/new-york-knicks-season-preview-ins-outs-key-players-talking-points-prediction-odds-schedule/58b1pu7rif96znesshmqk1dy" target="_blank" rel="noopener noreferrer"><h3>New York Knicks 2026-27 season preview - Key moves, game schedule, odds, prediction</h3><img src="https://images.daznservices.com/di/library/DAZN_News/67/3b/gfdsggf_1alwm1cj53e6f1f8j490pi2a1o.jpg?t=1077581473" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Read our New York Knicks 2026-27 NBA season preview, featuring roster moves, projected lineup, key games, predictions and how to watch on DAZN. Get the latest NBA news on DAZN News</p><div class="safe-news-meta">dazn.com - 15h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/ice-pursuit-houston-dead-man.html" target="_blank" rel="noopener noreferrer"><h3>ICE Agents Who Rammed a Worker in Houston Were Chasing a Dead Man, Family Says</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15nat-immig-dead-man-1-bzjf/15nat-immig-dead-man-1-bzjf-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>ICE agents rammed a man during a pursuit in Houston, leaving him with a shattered leg. But a bulletin of the target shows a man who died in 2017, his daughter said.</p><div class="safe-news-meta">nytimes.com - 15h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/trump-russia-srpska-elections-wiles.html" target="_blank" rel="noopener noreferrer"><h3>More Trump Allies Aided Pro-Russian Balkan Government</h3><img src="https://static01.nyt.com/images/2026/10/15/us/15dc-srpska/15dc-srpska-videoSixteenByNine3000.png" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The daughter of the president’s chief of staff joined an American businessman in Republika Srpska as he explored a gas pipeline. And six current and former campaign advisers recently traveled there for an election.</p><div class="safe-news-meta">nytimes.com - 15h</div></a><a class="safe-news-card" href="https://www.justice.gov/criminal/staff-profile/acting-principal-deputy-assistant-attorney-general" target="_blank" rel="noopener noreferrer"><h3>Acting Principal Deputy Assistant Attorney General</h3><img src="https://www.justice.gov/themes/custom/usdoj_uswds/images/metatag-image--default.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div class="safe-news-meta">justice.gov - 16h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/175-anniversary-history-corrections-pulitzer-martian.html" target="_blank" rel="noopener noreferrer"><h3>Ms., Martians and Guacamole: Their First Time in The Times</h3><img src="https://static01.nyt.com/images/2026/10/14/multimedia/00firsts-promo-tk/00firsts-promo-tk-videoSixteenByNineJumbo1600-v3.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Our reporters share a compendium of debuts, discoveries and (sometimes overdue) appearances in the paper.</p><div class="safe-news-meta">nytimes.com - 16h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/hegseth-livestream-execution-hasan.html" target="_blank" rel="noopener noreferrer"><h3>Many Figures Opposed Hegseth’s Plan to Livestream Fort Hood Shooter’s Execution</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15dc-execution-backlash-tfjg/15dc-execution-backlash-tfjg-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A retired general, a Catholic archbishop for the military and one of Maj. Nidal Malik Hasan’s victims were among those who had spoken out.</p><div class="safe-news-meta">nytimes.com - 17h</div></a><a class="safe-news-card" href="https://www.nytimes.com/2026/10/15/us/politics/trump-administration-california-voter-rolls.html" target="_blank" rel="noopener noreferrer"><h3>Trump Administration Sues California Over Voter Rolls</h3><img src="https://static01.nyt.com/images/2026/10/15/multimedia/15dc-california-kjbf/15dc-california-kjbf-videoSixteenByNine3000.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The lawsuit is seeking to block the state temporarily from counting mail ballots of voters it claims are likely noncitizens, opening a new front in the administration’s legal fights with election officials.</p><div class="safe-news-meta">nytimes.com - 17h</div></a>
+  </div>
+</section>
+
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTop" href="#top" class="btn btn-light rounded-pill shadow-sm px-3 py-2" aria-label="Back to top">↑ Top</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var header = document.getElementById("mainHeader");
+        var backToTop = document.getElementById("backToTop");
+        var reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener("scroll", function() {
+            var scrolled = window.scrollY > 50;
+            header.classList.toggle("scrolled", scrolled);
+            backToTop.style.display = window.scrollY > 600 ? "inline-flex" : "none";
+        });
+
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => io.observe(el));
+        } else {
+            reveals.forEach(el => el.classList.add('visible'));
+        }
+    });
+    </script>
+
+</body>
+</html>
